@@ -13,7 +13,6 @@ function getActors() {
 	}
 }
 
-
 function uploadActor(actorData) {
 	
 	var XHR = new XMLHttpRequest();
@@ -25,9 +24,7 @@ function uploadActor(actorData) {
 	XHR.onload = function() {
 		getActors();
 	}
-
 }
-
 
 function deleteActor(id) {
 	var XHR = new XMLHttpRequest();
@@ -41,8 +38,6 @@ function deleteActor(id) {
 	}
 }
 
-
-
 function showActors(actors) {
 	var HTML = '';
 
@@ -50,7 +45,7 @@ function showActors(actors) {
 		HTML += actorTemplate(actor);
 	});
 
-	var actorsContainer = document.querySelector('.actors');
+	var actorsContainer = document.querySelector('.actors-list');
 
 	actorsContainer.innerHTML = HTML;
 
@@ -59,11 +54,11 @@ function showActors(actors) {
 
 function actorTemplate(actor) {
 	return `
-	<div class="actor">
-		<div class="actor__photo">
+	<div class="person">
+		<div class="person__photo">
 			<img src="${actor.photo || '/'}" alt="">
 		</div>
-		<div class="actor__info">
+		<div class="person__info">
 			<span>${actor.firstname} ${actor.lastname}</span>
 			<span>${actor.birthdate}</span>
 
@@ -90,9 +85,8 @@ function initListeners() {
 	});
 }
 
-// Init
-getActors();
 
+getActors();
 
 document.querySelector("#add-actor").addEventListener('click', (e) => {
 	e.preventDefault();

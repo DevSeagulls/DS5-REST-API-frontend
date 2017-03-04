@@ -8,19 +8,26 @@ body {
     margin: 0 auto;
 }
 
-.actors {
+.list {
     padding: 1rem;
-    border: 1px solid #ddd;
+    border: 1px solid #888;
     border-radius: 4px;
     overflow: hidden;
+    box-shadow: 0 14px 10px -6px rgba(0,0,0,.1);
 }
 
-.actor {
+.movie {
+    display: flex;
+    align-items: flex-start;
+}
+
+.person {
     display: flex;
     align-items: center;
 }
 
-.actor__photo {
+.movie__photo,
+.person__photo {
     width: 100px;
     height: 100px;
     background: #eee;
@@ -29,25 +36,46 @@ body {
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    border-radius: 4px;
 }
 
-.actor__photo img {
+.movie__photo {
+    height: auto;
+    min-height: 140px;
+}
+
+.movie__photo img,
+.person__photo img {
     display: block;
     width: 100%;
 }
 
-.actor__info span {
+.movie__info span {
+    color: #333;
+    font-size: .8rem;
+    display: block;
+    line-height: 1.5rem;
+}
+
+.person__info span {
     color: #333;
     font-size: 1.4rem;
     display: block;
 }
 
-.actor__info span:nth-child(2) {
-    font-size: 1rem;
+.movie__info span:nth-child(1) {
+    font-size: 1.4rem;
     font-weight: 600;
 }
 
-.actor__info button {
+.person__info span:nth-child(2) {
+    font-size: .8rem;
+    font-weight: 600;
+    margin-top: .4rem;
+}
+
+.movie__info button,
+.person__info button {
     margin-top: 1rem;
 }
 
@@ -64,4 +92,50 @@ input {
     width: 100%;
     margin: 1rem 0;
     border-radius: 4px;
+}
+
+nav {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+nav a {
+    color: #aaa;
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 2px solid transparent;
+}
+
+nav a.active,
+nav a:hover {
+    color: darkorange;
+    border-bottom: 2px solid darkorange;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #aaa;
+    margin: 1rem 0;
+}
+
+h3 {
+    margin: 2rem 0 1rem;
+}
+
+.extra {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: space-between;
 }

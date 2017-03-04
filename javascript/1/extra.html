@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>REST API - Frontend</title>
+
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+
+		<div class="container">
+
+			<h1>ПиноКоиск</h1>
+
+			<nav>
+				<a href="index.html">Фильмы</a>
+				<a href="actors.html">Актеры</a>
+				<a href="directors.html">Режиссеры</a>
+				<a class="active">Страны и жанры</a>
+			</nav>
+			
+
+
+			<div class="list countries-list">
+				<div class="extra">
+					<span>Россия</span>
+					<button>Удалить</button>
+				</div>
+			</div>
+
+			<h4>Добавить страну</h4>
+			<form name="newCountry">
+				<input type="text" name="name" placeholder="Страна">
+				<button id="add-country">Сохранить</button>
+			</form>
+			
+
+			<hr>
+
+
+			<div class="list genres-list">
+				<div class="extra">
+					<span>Россия</span>
+					<button>Удалить</button>
+				</div>
+			</div>
+
+			<h4>Добавить жанр</h4>
+			<form name="newGenre">
+				<input type="text" name="name" placeholder="Жанр">
+				<button id="add-genre">Сохранить</button>
+			</form>
+
+		</div>
+
+		<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+		<script src="extra.js"></script>
+		
+	</body>
+</html>

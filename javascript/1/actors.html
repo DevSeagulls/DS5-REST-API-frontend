@@ -13,43 +13,37 @@
 			<h1>ПиноКоиск</h1>
 
 			<nav>
-				<a class="active">Фильмы</a>
-				<a href="actors.html">Актеры</a>
+				<a href="index.html">Фильмы</a>
+				<a class="active">Актеры</a>
 				<a href="directors.html">Режиссеры</a>
 				<a href="extra.html">Страны и жанры</a>
 			</nav>
 			
-			<div class="list movies-list">
-				<div class="movie">
-					<div class="movie__photo">
+			<div class="list actors-list">
+				<div class="person">
+					<div class="person__photo">
 						<img src="" alt="">
 					</div>
-					<div class="movie__info">
-						<span>Название</span>
-						<span>Дата премьеры</span>
-						<span>Дата премьеры</span>
-						<span>Продолжительность</span>
-						<span>Жанр</span>
-						<span>Страна</span>
-						<span>Режиссер</span>
-						<span>Актеры</span>
+					<div class="person__info">
+						<span>Имя Фамилия</span>
+						<span>Дата</span>
 
-						<button class="delete-movie">Удалить</button>
+						<button class="delete-actor">Удалить</button>
 					</div>
 				</div>
 			</div>
 
-			<form name="newMovie">
+			<form name="newActor">
 				<input type="text" name="firstname" placeholder="Имя">
 				<input type="text" name="lastname"  placeholder="Фамилия">
 				<input type="date" name="birthdate" placeholder="Дата рождения">
 				<input type="file" name="photo" value="Выбрать фото">
-				<button id="add-movie">Сохранить</button>
+				<button id="add-actor">Сохранить</button>
 			</form>
 
 		</div>
 
-		<script src="movies.js"></script>
+		<script src="actors.js"></script>
 		
 	</body>
 </html>

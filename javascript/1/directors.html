@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>REST API - Frontend</title>
+
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+
+		<div class="container">
+
+			<h1>ПиноКоиск</h1>
+
+			<nav>
+				<a href="index.html">Фильмы</a>
+				<a href="actors.html">Актеры</a>
+				<a class="active">Режиссеры</a>
+				<a href="extra.html">Страны и жанры</a>
+			</nav>
+			
+			<div class="list directors-list">
+				
+			</div>
+				
+			<h3>Добавить режиссера</h3>
+
+			<form name="newDirector">
+				<input type="text" name="firstname" placeholder="Имя">
+				<input type="text" name="lastname"  placeholder="Фамилия">
+				<input type="date" name="birthdate" placeholder="Дата рождения">
+				<input type="file" name="photo" value="Выбрать фото">
+				<button id="add-director">Сохранить</button>
+			</form>
+
+		</div>
+
+		<script src="directors.js"></script>
+		
+	</body>
+</html>
