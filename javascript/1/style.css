@@ -1,0 +1,67 @@
+body {
+    font-family: sans-serif;
+}
+
+.container {
+    width: 60vw;
+    max-width: 640px;
+    margin: 0 auto;
+}
+
+.actors {
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.actor {
+    display: flex;
+    align-items: center;
+}
+
+.actor__photo {
+    width: 100px;
+    height: 100px;
+    background: #eee;
+    margin-right: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.actor__photo img {
+    display: block;
+    width: 100%;
+}
+
+.actor__info span {
+    color: #333;
+    font-size: 1.4rem;
+    display: block;
+}
+
+.actor__info span:nth-child(2) {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.actor__info button {
+    margin-top: 1rem;
+}
+
+hr:last-child {
+    display: none;  
+}
+
+input {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    padding: .3rem;
+    border: 1px solid #aaa;
+    display: block;
+    width: 100%;
+    margin: 1rem 0;
+    border-radius: 4px;
+}
